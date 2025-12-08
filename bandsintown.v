@@ -29,6 +29,7 @@ pub:
 }
 
 pub struct VenueData {
+pub:
 	name      string
 	latitude  string
 	longitude string
@@ -38,6 +39,7 @@ pub struct VenueData {
 }
 
 pub struct OfferData {
+pub:
 	type   string
 	url    string
 	status string
