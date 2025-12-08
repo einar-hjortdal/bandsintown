@@ -17,7 +17,7 @@ const special_character_escapes = {
 
 pub struct ArtistData {
 pub:
-	id                   i32
+	id                   string // the docs say integer but this really is a string
 	name                 string
 	url                  string
 	image_url            string
