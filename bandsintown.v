@@ -88,15 +88,15 @@ fn escape_special_characters(artist_name string) string {
 
 fn build_url_artist_by_name(artist_name string, api_key string) string {
 	escaped := escape_special_characters(artist_name)
-	return 'http://${base_url}/artists/${escaped}?app_id=${api_key}'
+	return 'https://${base_url}/artists/${escaped}?app_id=${api_key}'
 }
 
 fn build_url_artist_by_id(artist_id string, api_key string) string {
-	return 'http://${base_url}/artists/id_${artist_id}?app_id=${api_key}'
+	return 'https://${base_url}/artists/id_${artist_id}?app_id=${api_key}'
 }
 
 fn build_url_events(artist_name string, date string, api_key string) string {
-	return 'http://${base_url}/artists/${artist_name}/events?app_id=${api_key}&date=${date}'
+	return 'https://${base_url}/artists/${artist_name}/events?app_id=${api_key}&date=${date}'
 }
 
 pub fn (c Client) get_artist_by_name(artist_name string) !ArtistData {
